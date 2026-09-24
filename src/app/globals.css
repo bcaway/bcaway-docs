@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-primary-subtle: #F0F6FF;
+  --color-brand-mark: #4A86E8;
+
+  --color-bg: #FFFFFF;
+  --color-surface: #F9FAFB;
+  --color-surface-hover: #F3F4F6;
+
+  --color-text-main: #111827;
+  --color-text-secondary: #374151;
+  --color-text-muted: #6B7280;
+
+  --color-border: #E5E7EB;
+  --color-border-subtle: #F3F4F6;
+  --color-border-strong: #D1D5DB;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+  background-color: #FFFFFF;
+}
+
+body {
+  color: var(--color-text-main);
+  background-color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Tabular numbers for clean data/time alignment */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Understated, subtle scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}
+
+/* Heading anchor link on hover */
+.heading-anchor {
+  opacity: 0;
+  margin-left: 0.5rem;
+  color: #9CA3AF;
+  text-decoration: none;
+  font-weight: normal;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+h2:hover .heading-anchor,
+h3:hover .heading-anchor,
+h4:hover .heading-anchor {
+  opacity: 1;
+}
+.heading-anchor:hover {
+  color: #2563EB;
+}
+
+/* Code styling */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
