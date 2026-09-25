@@ -44,7 +44,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
   if (!headings.length) return null;
 
   return (
-    <aside className="hidden xl:block w-56 shrink-0 sticky top-[56px] h-[calc(100vh-56px)] overflow-y-auto px-4 py-8 text-xs select-none">
+    <aside className="hidden xl:block w-56 shrink-0 sticky top-[56px] h-[calc(100vh-56px)] self-start overflow-y-auto px-4 py-8 text-xs select-none">
       <div className="space-y-4">
         <div>
           <h4 className="font-semibold text-xs text-gray-900 mb-2.5">

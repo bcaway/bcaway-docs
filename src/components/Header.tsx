@@ -36,7 +36,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full h-[56px] bg-white border-b border-gray-200">
+      <header className="sticky top-0 z-50 w-full h-[56px] bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 flex items-center justify-between gap-4">
           {/* Left: Mobile hamburger & Logo */}
           <div className="flex items-center gap-3">

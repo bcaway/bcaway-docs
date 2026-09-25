@@ -117,7 +117,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       {/* Mobile Drawer Backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black/20 md:hidden"
+          className="fixed inset-0 top-[56px] z-30 bg-black/20 md:hidden"
           onClick={onClose}
           aria-hidden="true"
         />
@@ -125,7 +125,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 
       {/* Sidebar Navigation */}
       <aside
-        className={`fixed top-[56px] bottom-0 left-0 z-40 w-64 md:sticky md:block shrink-0 bg-white border-r border-gray-200 overflow-y-auto px-3 py-4 transition-transform duration-200 ease-in-out ${
+        className={`fixed top-[56px] bottom-0 left-0 z-40 w-64 bg-white border-r border-gray-200 overflow-y-auto px-3 py-4 transition-transform duration-200 ease-in-out md:sticky md:top-[56px] md:h-[calc(100vh-56px)] md:self-start md:z-10 md:transform-none md:transition-none md:shrink-0 ${
           isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         }`}
       >
@@ -198,7 +198,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                             href={item.href}
                             target="_blank"
                             rel="noreferrer"
-                            className="flex items-center justify-between px-2.5 py-1.5 text-xs text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors group"
+                            className="flex items-center justify-between px-2.5 py-1 text-xs text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors group"
                           >
                             <span className="truncate">{item.title}</span>
                             <ExternalLink className="w-3 h-3 text-gray-300 group-hover:text-gray-500 shrink-0 ml-1" />
@@ -211,7 +211,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                           key={item.href}
                           href={item.href}
                           onClick={onClose}
-                          className={`block px-2.5 py-1.5 text-xs rounded-md transition-colors truncate ${
+                          className={`block px-2.5 py-1 text-xs rounded-md transition-colors truncate ${
                             isActive
                               ? "bg-blue-50 text-blue-600 font-semibold"
                               : "text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-normal"
