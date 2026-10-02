@@ -74,7 +74,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
 
         <div className="pt-4 border-t border-gray-100 text-[11px]">
           <a
-            href="mailto:kabsek30@bergen.org?subject=BCAway%20Docs%20Feedback"
+            href="mailto:support@bcaway.app?subject=BCAway%20Docs%20Feedback"
             className="text-gray-400 hover:text-blue-600 transition-colors"
           >
             Submit feedback

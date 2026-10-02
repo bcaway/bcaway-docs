@@ -113,12 +113,12 @@ export default function InstallBetaPage() {
             </a>
           </h2>
           <p className="text-sm text-gray-700 leading-relaxed">
-            Take a screenshot anywhere in BCAway and tap <strong>Share Beta Feedback</strong> to submit logs, or email developer Kabir Sekhon directly at{" "}
+            Take a screenshot anywhere in BCAway and tap <strong>Share Beta Feedback</strong> to submit logs, or email the developerdirectly at{" "}
             <a
-              href="mailto:kabsek30@bergen.org?subject=BCAway%20Beta%20Feedback"
+              href="mailto:support@bcaway.app?subject=BCAway%20Beta%20Feedback"
               className="text-blue-600 hover:underline font-medium"
             >
-              kabsek30@bergen.org
+              support@bcaway.app
             </a>
             .
           </p>
